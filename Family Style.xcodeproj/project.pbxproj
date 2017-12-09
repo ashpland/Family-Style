@@ -12,6 +12,7 @@
 		49152FB01FDB670900E50355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49152FAE1FDB670900E50355 /* Main.storyboard */; };
 		49152FB21FDB670900E50355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49152FB11FDB670900E50355 /* Assets.xcassets */; };
 		49152FB51FDB670900E50355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49152FB31FDB670900E50355 /* LaunchScreen.storyboard */; };
+		49152FBF1FDB684300E50355 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49152FBE1FDB684300E50355 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		49152FB11FDB670900E50355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49152FB41FDB670900E50355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49152FB61FDB670900E50355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49152FBC1FDB684000E50355 /* Family Style.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Family Style.entitlements"; sourceTree = "<group>"; };
+		49152FBE1FDB684300E50355 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49152FBF1FDB684300E50355 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				49152FA91FDB670900E50355 /* Family Style */,
 				49152FA81FDB670900E50355 /* Products */,
+				49152FBD1FDB684300E50355 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +59,7 @@
 		49152FA91FDB670900E50355 /* Family Style */ = {
 			isa = PBXGroup;
 			children = (
+				49152FBC1FDB684000E50355 /* Family Style.entitlements */,
 				49152FAA1FDB670900E50355 /* AppDelegate.swift */,
 				49152FAC1FDB670900E50355 /* ViewController.swift */,
 				49152FAE1FDB670900E50355 /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				49152FB61FDB670900E50355 /* Info.plist */,
 			);
 			path = "Family Style";
+			sourceTree = "<group>";
+		};
+		49152FBD1FDB684300E50355 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49152FBE1FDB684300E50355 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +111,14 @@
 					49152FA61FDB670900E50355 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -274,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Family Style/Family Style.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T5E8L2XP69;
 				INFOPLIST_FILE = "Family Style/Info.plist";
@@ -281,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "land.ashp.Family-Style";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Family Style/Family Style.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T5E8L2XP69;
 				INFOPLIST_FILE = "Family Style/Info.plist";
@@ -296,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "land.ashp.Family-Style";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
