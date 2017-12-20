@@ -9,7 +9,6 @@
 import UIKit
 
 class FSTMeal: NSObject {
-    
     var name: String
     var mealDescription: String?
     var dateTime: Date

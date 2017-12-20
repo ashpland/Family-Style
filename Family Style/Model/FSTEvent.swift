@@ -9,13 +9,13 @@
 import UIKit
 
 class FSTEvent: NSObject {
-
     var name: String
-    var eventDescription: String?
+    var eventDescription: String
     var meals: Array = [FSTMeal]()
         
-    init(_ name: String) {
-        self.name = name
+    override init() {
+        self.name = ""
+        self.eventDescription = ""
         super.init()
     }
     
