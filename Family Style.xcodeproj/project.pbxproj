@@ -13,6 +13,10 @@
 		49152FB21FDB670900E50355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49152FB11FDB670900E50355 /* Assets.xcassets */; };
 		49152FB51FDB670900E50355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49152FB31FDB670900E50355 /* LaunchScreen.storyboard */; };
 		49152FBF1FDB684300E50355 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49152FBE1FDB684300E50355 /* CloudKit.framework */; };
+		49F8373A1FEAD20B0033A66F /* FSTEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F837391FEAD20B0033A66F /* FSTEvent.swift */; };
+		49F8373C1FEAD28A0033A66F /* FSTMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373B1FEAD28A0033A66F /* FSTMeal.swift */; };
+		49F8373E1FEAD3030033A66F /* FSTParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373D1FEAD3030033A66F /* FSTParticipant.swift */; };
+		49F837401FEAD3460033A66F /* FSTComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373F1FEAD3460033A66F /* FSTComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		49152FB61FDB670900E50355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49152FBC1FDB684000E50355 /* Family Style.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Family Style.entitlements"; sourceTree = "<group>"; };
 		49152FBE1FDB684300E50355 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		49F837391FEAD20B0033A66F /* FSTEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTEvent.swift; sourceTree = "<group>"; };
+		49F8373B1FEAD28A0033A66F /* FSTMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTMeal.swift; sourceTree = "<group>"; };
+		49F8373D1FEAD3030033A66F /* FSTParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTParticipant.swift; sourceTree = "<group>"; };
+		49F8373F1FEAD3460033A66F /* FSTComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,8 @@
 		49152FA91FDB670900E50355 /* Family Style */ = {
 			isa = PBXGroup;
 			children = (
+				49F837381FEAD1600033A66F /* ViewControllers */,
+				49F837371FEAD10A0033A66F /* Model */,
 				49152FBC1FDB684000E50355 /* Family Style.entitlements */,
 				49152FAA1FDB670900E50355 /* AppDelegate.swift */,
 				49152FAC1FDB670900E50355 /* ViewController.swift */,
@@ -76,6 +86,24 @@
 				49152FBE1FDB684300E50355 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49F837371FEAD10A0033A66F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49F837391FEAD20B0033A66F /* FSTEvent.swift */,
+				49F8373B1FEAD28A0033A66F /* FSTMeal.swift */,
+				49F8373D1FEAD3030033A66F /* FSTParticipant.swift */,
+				49F8373F1FEAD3460033A66F /* FSTComponent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49F837381FEAD1600033A66F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +132,7 @@
 		49152F9F1FDB670900E50355 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FST;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = hearthedge;
@@ -158,8 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49F8373C1FEAD28A0033A66F /* FSTMeal.swift in Sources */,
 				49152FAD1FDB670900E50355 /* ViewController.swift in Sources */,
+				49F8373A1FEAD20B0033A66F /* FSTEvent.swift in Sources */,
+				49F837401FEAD3460033A66F /* FSTComponent.swift in Sources */,
 				49152FAB1FDB670900E50355 /* AppDelegate.swift in Sources */,
+				49F8373E1FEAD3030033A66F /* FSTParticipant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
