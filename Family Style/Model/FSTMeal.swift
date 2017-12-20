@@ -9,17 +9,22 @@
 import UIKit
 
 class FSTMeal: NSObject {
+    
+    var name: String
     var mealDescription: String?
     var dateTime: Date
     var responsible: FSTParticipant?
     var participants: [FSTParticipant]
     var components: [FSTComponent]
     
-    init(at dateTime: Date) {
+    init(_ name: String, at dateTime: Date) {
+        self.name = name
         self.dateTime = dateTime
         self.participants = [FSTParticipant.user]
         self.components = [FSTComponent]()
         super.init()
     }
+    
+    
 
 }

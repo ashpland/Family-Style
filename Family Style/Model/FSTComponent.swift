@@ -9,5 +9,13 @@
 import UIKit
 
 class FSTComponent: NSObject {
-
+    var componentDescription: String?
+    var link: URL?
+    var responsible: FSTParticipant?
+    var ingredients: [FSTIngredient]
+    
+    override init() {
+        self.ingredients = [FSTIngredient]()
+        super.init()
+    }
 }

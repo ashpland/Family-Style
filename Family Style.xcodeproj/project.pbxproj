@@ -17,6 +17,7 @@
 		49F8373C1FEAD28A0033A66F /* FSTMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373B1FEAD28A0033A66F /* FSTMeal.swift */; };
 		49F8373E1FEAD3030033A66F /* FSTParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373D1FEAD3030033A66F /* FSTParticipant.swift */; };
 		49F837401FEAD3460033A66F /* FSTComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373F1FEAD3460033A66F /* FSTComponent.swift */; };
+		49F837421FEAD7310033A66F /* FSTIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F837411FEAD7310033A66F /* FSTIngredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		49F8373B1FEAD28A0033A66F /* FSTMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTMeal.swift; sourceTree = "<group>"; };
 		49F8373D1FEAD3030033A66F /* FSTParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTParticipant.swift; sourceTree = "<group>"; };
 		49F8373F1FEAD3460033A66F /* FSTComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTComponent.swift; sourceTree = "<group>"; };
+		49F837411FEAD7310033A66F /* FSTIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTIngredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +95,9 @@
 			children = (
 				49F837391FEAD20B0033A66F /* FSTEvent.swift */,
 				49F8373B1FEAD28A0033A66F /* FSTMeal.swift */,
-				49F8373D1FEAD3030033A66F /* FSTParticipant.swift */,
 				49F8373F1FEAD3460033A66F /* FSTComponent.swift */,
+				49F837411FEAD7310033A66F /* FSTIngredient.swift */,
+				49F8373D1FEAD3030033A66F /* FSTParticipant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F8373C1FEAD28A0033A66F /* FSTMeal.swift in Sources */,
+				49F837421FEAD7310033A66F /* FSTIngredient.swift in Sources */,
 				49152FAD1FDB670900E50355 /* ViewController.swift in Sources */,
 				49F8373A1FEAD20B0033A66F /* FSTEvent.swift in Sources */,
 				49F837401FEAD3460033A66F /* FSTComponent.swift in Sources */,
