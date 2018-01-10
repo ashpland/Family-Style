@@ -14,7 +14,7 @@ class FSTEvent: NSObject {
     var meals: Array = [FSTMeal]()
         
     override init() {
-        self.name = ""
+        self.name = "New Event"
         self.eventDescription = ""
         super.init()
     }

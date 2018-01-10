@@ -9,5 +9,14 @@
 import UIKit
 
 class FSTIngredient: NSObject {
+    var name: String
+    var ingredientDescription: String
+    var responsible: FSTParticipant?
+    
+    override init() {
+        self.name = ""
+        self.ingredientDescription = ""
+        super.init()
+    }
 
 }

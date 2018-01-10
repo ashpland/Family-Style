@@ -10,13 +10,14 @@ import UIKit
 
 class FSTComponent: NSObject {
     var name: String
-    var componentDescription: String?
+    var componentDescription: String
     var link: URL?
     var responsible: FSTParticipant?
     var ingredients: [FSTIngredient]
     
     override init() {
         self.name = ""
+        self.componentDescription = ""
         self.ingredients = [FSTIngredient]()
         super.init()
     }
