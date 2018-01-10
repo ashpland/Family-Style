@@ -9,5 +9,20 @@
 import UIKit
 
 class FSTParticipant: NSObject {
-    static let user = FSTParticipant()
+    static let user = FSTParticipant(name: "User name")
+    
+    var name: String
+    var avatar: UIImage?
+    
+    override init() {
+        self.name = ""
+        super.init()
+    }
+    
+    init(name: String) {
+        self.name = name
+        super.init()
+    }
+
+
 }
