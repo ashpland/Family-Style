@@ -97,12 +97,12 @@
 		49F837371FEAD10A0033A66F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4976C3FB200EBE4500FAA182 /* FSTDataManager.swift */,
 				49F837391FEAD20B0033A66F /* FSTEvent.swift */,
 				49F8373B1FEAD28A0033A66F /* FSTMeal.swift */,
 				49F8373F1FEAD3460033A66F /* FSTComponent.swift */,
 				49F837411FEAD7310033A66F /* FSTIngredient.swift */,
 				49F8373D1FEAD3030033A66F /* FSTParticipant.swift */,
-				4976C3FB200EBE4500FAA182 /* FSTDataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
