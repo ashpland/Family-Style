@@ -18,5 +18,9 @@ class FSTEvent: NSObject {
         self.eventDescription = ""
         super.init()
     }
+ 
+    override var description: String {
+        return "Event: " + self.name + " - " + self.eventDescription
+    }
     
 }

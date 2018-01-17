@@ -45,7 +45,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="G3Y-Qe-plE" kind="show" id="Jj7-Vh-4vW"/>
+                                            <segue destination="G3Y-Qe-plE" kind="show" identifier="EventSegue" id="Jj7-Vh-4vW"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -68,6 +68,9 @@
                     <navigationItem key="navigationItem" title="Events" id="K2k-hB-69F">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yei-c8-osl"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="We2-aM-Qec" id="QLQ-Zl-P8w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

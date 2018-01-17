@@ -8,13 +8,35 @@
 
 import UIKit
 
-class FSTEventListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FSTEventListViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EventSegue" {
+            let eventID = self.tableView.indexPathForSelectedRow!.row
+            
+            print(FSTDataManager.event(index: eventID))
+            
+        }
+    }
+    
+    
+}
 
+extension FSTEventListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.isSelected = false
+    }
+}
+
+extension FSTEventListViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return FSTDataManager.numberOfEvents()
     }
@@ -27,8 +49,6 @@ class FSTEventListViewController: UIViewController, UITableViewDelegate, UITable
         cell.detailTextLabel?.text = event.eventDescription
         
         return cell
-
+        
     }
-    
-
 }
