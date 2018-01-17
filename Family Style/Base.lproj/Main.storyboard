@@ -112,6 +112,29 @@
                                             <segue destination="9Qh-0J-tlI" kind="show" id="wQC-sO-XOi"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="k5b-Qs-ZJd">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k5b-Qs-ZJd" id="EWG-T5-Nqx">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgV-qD-sdz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                                    <state key="normal" title="Add New Meal"/>
+                                                    <connections>
+                                                        <action selector="addMeal:" destination="G3Y-Qe-plE" eventType="touchUpInside" id="1h5-GI-83b"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jgV-qD-sdz" firstAttribute="top" secondItem="EWG-T5-Nqx" secondAttribute="top" id="3g7-nC-8wl"/>
+                                                <constraint firstAttribute="trailing" secondItem="jgV-qD-sdz" secondAttribute="trailing" id="K0X-8G-bpY"/>
+                                                <constraint firstItem="jgV-qD-sdz" firstAttribute="leading" secondItem="EWG-T5-Nqx" secondAttribute="leading" id="LrK-Bx-F4F"/>
+                                                <constraint firstAttribute="bottom" secondItem="jgV-qD-sdz" secondAttribute="bottom" id="R5i-Da-srk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="G3Y-Qe-plE" id="v48-Rn-1WD"/>

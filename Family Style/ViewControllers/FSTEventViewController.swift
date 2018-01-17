@@ -21,6 +21,9 @@ class FSTEventViewController: UIViewController {
         self.descriptionField.text = event.eventDescription
         
     }
+    @IBAction func addMeal(_ sender: Any) {
+        print("Add meal! 🥗")
+    }
     
 }
 
