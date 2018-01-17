@@ -20,11 +20,23 @@ class FSTEventListViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "EventSegue" {
             let eventID = self.tableView.indexPathForSelectedRow!.row
+            let destination = segue.destination as! FSTEventViewController
             
-            print(FSTDataManager.event(index: eventID))
-            
+            destination.event = FSTEventManager.event(index: eventID)
         }
     }
+    
+    @IBAction func createEvent(_ sender: Any) {
+        
+        FSTEventManager.addEvent()
+        
+        
+        let indexPath = IndexPath(row: FSTEventManager.count()-1, section: 0)
+        
+        self.tableView.insertRows(at: [indexPath], with: .automatic)
+        
+    }
+    
     
     
 }
@@ -33,16 +45,18 @@ extension FSTEventListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.isSelected = false
     }
+    
+    
 }
 
 extension FSTEventListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return FSTDataManager.numberOfEvents()
+        return FSTEventManager.count()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let event = FSTDataManager.event(index: indexPath.row)
+        let event = FSTEventManager.event(index: indexPath.row)
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath)
         
         cell.textLabel?.text = event.name
@@ -51,4 +65,8 @@ extension FSTEventListViewController: UITableViewDataSource {
         return cell
         
     }
+    
+    
+    
+    
 }

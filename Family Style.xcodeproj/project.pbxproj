@@ -14,7 +14,8 @@
 		49152FB51FDB670900E50355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49152FB31FDB670900E50355 /* LaunchScreen.storyboard */; };
 		49152FBF1FDB684300E50355 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49152FBE1FDB684300E50355 /* CloudKit.framework */; };
 		4976C3FA200EBC0A00FAA182 /* FSTEventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976C3F9200EBC0A00FAA182 /* FSTEventListViewController.swift */; };
-		4976C3FC200EBE4500FAA182 /* FSTDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976C3FB200EBE4500FAA182 /* FSTDataManager.swift */; };
+		4976C3FC200EBE4500FAA182 /* FSTEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976C3FB200EBE4500FAA182 /* FSTEventManager.swift */; };
+		4976C3FE200ED81300FAA182 /* FSTEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976C3FD200ED81300FAA182 /* FSTEventViewController.swift */; };
 		49F8373A1FEAD20B0033A66F /* FSTEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F837391FEAD20B0033A66F /* FSTEvent.swift */; };
 		49F8373C1FEAD28A0033A66F /* FSTMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373B1FEAD28A0033A66F /* FSTMeal.swift */; };
 		49F8373E1FEAD3030033A66F /* FSTParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373D1FEAD3030033A66F /* FSTParticipant.swift */; };
@@ -33,7 +34,8 @@
 		49152FBC1FDB684000E50355 /* Family Style.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Family Style.entitlements"; sourceTree = "<group>"; };
 		49152FBE1FDB684300E50355 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4976C3F9200EBC0A00FAA182 /* FSTEventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTEventListViewController.swift; sourceTree = "<group>"; };
-		4976C3FB200EBE4500FAA182 /* FSTDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTDataManager.swift; sourceTree = "<group>"; };
+		4976C3FB200EBE4500FAA182 /* FSTEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTEventManager.swift; sourceTree = "<group>"; };
+		4976C3FD200ED81300FAA182 /* FSTEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTEventViewController.swift; sourceTree = "<group>"; };
 		49F837391FEAD20B0033A66F /* FSTEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTEvent.swift; sourceTree = "<group>"; };
 		49F8373B1FEAD28A0033A66F /* FSTMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTMeal.swift; sourceTree = "<group>"; };
 		49F8373D1FEAD3030033A66F /* FSTParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTParticipant.swift; sourceTree = "<group>"; };
@@ -97,7 +99,7 @@
 		49F837371FEAD10A0033A66F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4976C3FB200EBE4500FAA182 /* FSTDataManager.swift */,
+				4976C3FB200EBE4500FAA182 /* FSTEventManager.swift */,
 				49F837391FEAD20B0033A66F /* FSTEvent.swift */,
 				49F8373B1FEAD28A0033A66F /* FSTMeal.swift */,
 				49F8373F1FEAD3460033A66F /* FSTComponent.swift */,
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				4976C3F9200EBC0A00FAA182 /* FSTEventListViewController.swift */,
+				4976C3FD200ED81300FAA182 /* FSTEventViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F8373C1FEAD28A0033A66F /* FSTMeal.swift in Sources */,
+				4976C3FE200ED81300FAA182 /* FSTEventViewController.swift in Sources */,
 				49F837421FEAD7310033A66F /* FSTIngredient.swift in Sources */,
 				4976C3FA200EBC0A00FAA182 /* FSTEventListViewController.swift in Sources */,
 				49152FAD1FDB670900E50355 /* ViewController.swift in Sources */,
@@ -204,7 +208,7 @@
 				49F837401FEAD3460033A66F /* FSTComponent.swift in Sources */,
 				49152FAB1FDB670900E50355 /* AppDelegate.swift in Sources */,
 				49F8373E1FEAD3030033A66F /* FSTParticipant.swift in Sources */,
-				4976C3FC200EBE4500FAA182 /* FSTDataManager.swift in Sources */,
+				4976C3FC200EBE4500FAA182 /* FSTEventManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

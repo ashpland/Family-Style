@@ -66,7 +66,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="K2k-hB-69F">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yei-c8-osl"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Yei-c8-osl">
+                            <connections>
+                                <action selector="createEvent:" destination="BYZ-38-t0r" id="J1n-hW-5n3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="We2-aM-Qec" id="QLQ-Zl-P8w"/>
@@ -79,7 +83,7 @@
         <!--Event Name-->
         <scene sceneID="qWk-e1-eOg">
             <objects>
-                <viewController title="Event Name" id="G3Y-Qe-plE" sceneMemberID="viewController">
+                <viewController title="Event Name" id="G3Y-Qe-plE" customClass="FSTEventViewController" customModule="Family_Style" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gOR-cT-TIR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,6 +113,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="G3Y-Qe-plE" id="v48-Rn-1WD"/>
+                                    <outlet property="delegate" destination="G3Y-Qe-plE" id="LlR-5K-kOS"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkw-Kc-CuD">
                                 <rect key="frame" x="16" y="181" width="67" height="27"/>
@@ -134,6 +142,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tCF-jB-urW"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="j8b-nL-CoO" id="10t-av-xvn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipg-ss-cL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

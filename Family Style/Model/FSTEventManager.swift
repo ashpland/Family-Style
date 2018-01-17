@@ -1,5 +1,5 @@
 //
-//  FSTDataManager.swift
+//  FSTEventManager.swift
 //  Family Style
 //
 //  Created by Andrew on 2018-01-16.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class FSTDataManager: NSObject {
-    static let sharedInstance = FSTDataManager()
+class FSTEventManager: NSObject {
+    static let sharedInstance = FSTEventManager()
     
     var eventList: [FSTEvent]!
     
@@ -33,12 +33,17 @@ class FSTDataManager: NSObject {
         return eventArray
     }
     
-    static func numberOfEvents() -> Int {
-        return FSTDataManager.sharedInstance.eventList.count
+    static func count() -> Int {
+        return FSTEventManager.sharedInstance.eventList.count
     }
     
     static func event(index: Int) -> FSTEvent {
-        return FSTDataManager.sharedInstance.eventList[index]
+        return FSTEventManager.sharedInstance.eventList[index]
+    }
+    
+    static func addEvent() {
+        let newEvent = FSTEvent()
+        FSTEventManager.sharedInstance.eventList.append(newEvent)
     }
     
     
