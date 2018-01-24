@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Meal Name-->
+        <!--Meal-->
         <scene sceneID="2Vv-DJ-Gcj">
             <objects>
-                <viewController title="Meal Name" id="9Qh-0J-tlI" customClass="FSTMealViewController" customModule="Family_Style" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Meal" id="9Qh-0J-tlI" customClass="FSTMealViewController" customModule="Family_Style" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bXl-jl-7r8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="1409" y="134"/>
         </scene>
-        <!--Dish Name-->
+        <!--Component-->
         <scene sceneID="8Co-2J-B0n">
             <objects>
-                <viewController title="Dish Name" id="qVQ-BO-fAL" sceneMemberID="viewController">
+                <viewController title="Component" id="qVQ-BO-fAL" customClass="FSTComponentViewController" customModule="Family_Style" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g7L-hV-Vf4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +167,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWW-UW-qha">
-                                <rect key="frame" x="345" y="0.0" width="30" height="38"/>
+                                <rect key="frame" x="325" y="20" width="30" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="ⓧ"/>
                             </button>
@@ -175,14 +175,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jOe-Lj-Ekc" firstAttribute="bottom" secondItem="hX5-aZ-DvU" secondAttribute="bottom" id="1LY-oT-Hyd"/>
+                            <constraint firstItem="XWW-UW-qha" firstAttribute="top" secondItem="ira-U8-2Oo" secondAttribute="top" id="8N7-ze-nvA"/>
                             <constraint firstItem="jOe-Lj-Ekc" firstAttribute="trailing" secondItem="hX5-aZ-DvU" secondAttribute="trailing" id="BzM-CK-afF"/>
                             <constraint firstItem="jOe-Lj-Ekc" firstAttribute="leading" secondItem="hX5-aZ-DvU" secondAttribute="leading" id="FCk-4Q-gEB"/>
                             <constraint firstItem="jOe-Lj-Ekc" firstAttribute="top" secondItem="ira-U8-2Oo" secondAttribute="bottom" constant="20" id="JZJ-4N-MWX"/>
-                            <constraint firstItem="XWW-UW-qha" firstAttribute="trailing" secondItem="hX5-aZ-DvU" secondAttribute="trailing" id="Jr5-cl-Gqo"/>
                             <constraint firstItem="hX5-aZ-DvU" firstAttribute="trailing" secondItem="ira-U8-2Oo" secondAttribute="trailing" constant="20" id="TGB-Sl-iRj"/>
                             <constraint firstItem="ira-U8-2Oo" firstAttribute="top" secondItem="hX5-aZ-DvU" secondAttribute="top" id="YhI-Oy-kY8"/>
+                            <constraint firstItem="XWW-UW-qha" firstAttribute="trailing" secondItem="ira-U8-2Oo" secondAttribute="trailing" id="ZS3-7W-URe"/>
                             <constraint firstItem="ira-U8-2Oo" firstAttribute="leading" secondItem="hX5-aZ-DvU" secondAttribute="leading" constant="20" id="uoA-Jn-3y3"/>
-                            <constraint firstItem="XWW-UW-qha" firstAttribute="top" secondItem="g7L-hV-Vf4" secondAttribute="top" id="znK-Qp-BSK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hX5-aZ-DvU"/>
                     </view>

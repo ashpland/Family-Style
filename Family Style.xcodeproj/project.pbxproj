@@ -17,6 +17,7 @@
 		4976C3FC200EBE4500FAA182 /* FSTEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976C3FB200EBE4500FAA182 /* FSTEventManager.swift */; };
 		4976C3FE200ED81300FAA182 /* FSTEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976C3FD200ED81300FAA182 /* FSTEventViewController.swift */; };
 		499739BA2017F26E0010438E /* FSTMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499739B92017F26E0010438E /* FSTMealViewController.swift */; };
+		499739BC201808620010438E /* FSTComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499739BB201808620010438E /* FSTComponentViewController.swift */; };
 		49F8373A1FEAD20B0033A66F /* FSTEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F837391FEAD20B0033A66F /* FSTEvent.swift */; };
 		49F8373C1FEAD28A0033A66F /* FSTMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373B1FEAD28A0033A66F /* FSTMeal.swift */; };
 		49F8373E1FEAD3030033A66F /* FSTParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F8373D1FEAD3030033A66F /* FSTParticipant.swift */; };
@@ -38,6 +39,7 @@
 		4976C3FB200EBE4500FAA182 /* FSTEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTEventManager.swift; sourceTree = "<group>"; };
 		4976C3FD200ED81300FAA182 /* FSTEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTEventViewController.swift; sourceTree = "<group>"; };
 		499739B92017F26E0010438E /* FSTMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTMealViewController.swift; sourceTree = "<group>"; };
+		499739BB201808620010438E /* FSTComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTComponentViewController.swift; sourceTree = "<group>"; };
 		49F837391FEAD20B0033A66F /* FSTEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTEvent.swift; sourceTree = "<group>"; };
 		49F8373B1FEAD28A0033A66F /* FSTMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTMeal.swift; sourceTree = "<group>"; };
 		49F8373D1FEAD3030033A66F /* FSTParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSTParticipant.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				4976C3F9200EBC0A00FAA182 /* FSTEventListViewController.swift */,
 				4976C3FD200ED81300FAA182 /* FSTEventViewController.swift */,
 				499739B92017F26E0010438E /* FSTMealViewController.swift */,
+				499739BB201808620010438E /* FSTComponentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				49152FAD1FDB670900E50355 /* ViewController.swift in Sources */,
 				49F8373A1FEAD20B0033A66F /* FSTEvent.swift in Sources */,
 				49F837401FEAD3460033A66F /* FSTComponent.swift in Sources */,
+				499739BC201808620010438E /* FSTComponentViewController.swift in Sources */,
 				49152FAB1FDB670900E50355 /* AppDelegate.swift in Sources */,
 				49F8373E1FEAD3030033A66F /* FSTParticipant.swift in Sources */,
 				4976C3FC200EBE4500FAA182 /* FSTEventManager.swift in Sources */,
