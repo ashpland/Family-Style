@@ -12,11 +12,21 @@ class FSTComponentViewController: UIViewController {
 
     var component: FSTComponent!
     
+    @IBOutlet weak var componentNameLabel: UILabel!
+    @IBOutlet weak var responsibleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.componentNameLabel.text = self.component.name
     }
 
 
+    @IBAction func exitButton(_ sender: Any) {
+        
+    }
 }
 
 

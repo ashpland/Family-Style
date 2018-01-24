@@ -107,6 +107,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lue-4U-uwH"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="tph-bl-8aV" id="GiP-qB-LXh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOh-HF-S9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,11 +168,18 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qVQ-BO-fAL" id="9pM-Px-gho"/>
+                                    <outlet property="delegate" destination="qVQ-BO-fAL" id="adN-tD-FF6"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWW-UW-qha">
                                 <rect key="frame" x="325" y="20" width="30" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="ⓧ"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="qVQ-BO-fAL" eventType="touchUpInside" id="IiG-Zd-Dif"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,6 +196,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hX5-aZ-DvU"/>
                     </view>
+                    <connections>
+                        <outlet property="componentNameLabel" destination="pv4-uc-rxV" id="sXp-fe-zOb"/>
+                        <outlet property="descriptionLabel" destination="uVD-N6-Oux" id="jw6-Vq-Zas"/>
+                        <outlet property="responsibleLabel" destination="qLz-h3-KuT" id="ToC-i1-BnH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYW-Re-4If" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

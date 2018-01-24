@@ -12,6 +12,7 @@ class FSTMealViewController: UIViewController {
 
     let meal = FSTMeal("Thanksgiving", at: Date())
     
+    @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -22,7 +23,15 @@ class FSTMealViewController: UIViewController {
     }
     
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ComponentSegue" {
+            let componentID = self.tableView.indexPathForSelectedRow!.row
+            let destination = segue.destination as! FSTComponentViewController
+            
+            destination.component = self.meal.components[componentID]
+        }
+
+    }
     
 }
 
