@@ -25,7 +25,7 @@ class FSTComponentViewController: UIViewController {
 
 
     @IBAction func exitButton(_ sender: Any) {
-        
+        self.dismiss(animated: true)
     }
 }
 
@@ -34,10 +34,17 @@ extension FSTComponentViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.row == self.component.ingredients.count {
-            print("Add item")
+            print("Add ingredient")
         }
         else {
-            print("Show item")
+            let cell = tableView.cellForRow(at: indexPath)!
+            
+            cell.accessoryType = cell.accessoryType == .none ? .checkmark : .none
+            
+           
+            
+            
+            print("Show ingredient")
         }
         
         

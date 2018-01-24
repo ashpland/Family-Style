@@ -23,6 +23,15 @@ class FSTMealViewController: UIViewController {
     }
     
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "ComponentSegue" {
+            if self.tableView.indexPathForSelectedRow!.row < self.meal.components.count {
+                return true
+            }
+        }
+        return false
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ComponentSegue" {
             let componentID = self.tableView.indexPathForSelectedRow!.row
