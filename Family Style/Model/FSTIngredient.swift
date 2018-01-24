@@ -18,5 +18,11 @@ class FSTIngredient: NSObject {
         self.ingredientDescription = ""
         super.init()
     }
+    
+    init(name: String) {
+        self.name = name
+        self.ingredientDescription = ""
+        super.init()
+    }
 
 }

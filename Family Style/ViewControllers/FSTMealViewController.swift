@@ -22,21 +22,28 @@ class FSTMealViewController: UIViewController {
     }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        <#code#>
-    }
+    
     
 }
 
 // demo data
 extension FSTMealViewController {
     func createDemoData() {
-        let turkey = FSTComponent()
-        turkey.name = "Turkey"
-        let potatoes = FSTComponent()
-        potatoes.name = "Potatoes"
-        let sauce = FSTComponent()
-        sauce.name = "Cranberry Sauce"
+        let turkey = FSTComponent(name: "Turkey",
+                                  ingredients: ["Turkey Breasts",
+                                                "Olive Oil",
+                                                "Rosemary"])
+        
+        let potatoes = FSTComponent(name: "Mashed Potatoes",
+                                    ingredients: ["Yukon Gold Potatoes",
+                                                  "Garlic",
+                                                  "Chicken Stock"])
+
+        let sauce = FSTComponent(name: "Cranberry Sauce",
+                                 ingredients: ["Cranberries",
+                                               "Orange rind",
+                                               "Cinnamon",
+                                               "Sugar"])
         
         self.meal.components.append(turkey)
         self.meal.components.append(potatoes)

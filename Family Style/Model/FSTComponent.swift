@@ -21,4 +21,25 @@ class FSTComponent: NSObject {
         self.ingredients = [FSTIngredient]()
         super.init()
     }
+    
+    init(name: String) {
+        self.name = name
+        self.componentDescription = ""
+        self.ingredients = [FSTIngredient]()
+        super.init()
+    }
+    
+    init(name: String, ingredients: [String]) {
+        self.name = name
+        self.componentDescription = "Good food"
+        self.ingredients = [FSTIngredient]()
+
+        
+        for ingredient in ingredients {
+            self.ingredients.append(FSTIngredient(name: ingredient))
+        }
+        
+        super.init()
+    }
+    
 }
